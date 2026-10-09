@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="auth">
+
+            <section class="auth__art" aria-label="Ilustrasi">
+                <div class="art">
+                    <span class="art__shape art__shape--one"></span>
+                    <span class="art__shape art__shape--two"></span>
+                    <span class="art__shape art__shape--three"></span>
+                </div>
+
+                <div class="auth__quote">
+                    <h2>Hello, Welcome!</h2>
+                    <p>Let's start the journey with your personal account</p>
+                </div>
+            </section>
+
+            <section class="auth__panel" aria-labelledby="judul-login">
+                <div class="panel">
+                    <a class="logo" href="#" aria-label="Lumen, ke beranda">
+                        <svg width="28" height="28" viewBox="0 0 28 28" aria-hidden="true" focusable="false">
+                            <circle cx="14" cy="14" r="14" fill="#1f3a5f"/>
+                            <path d="M9 8v12h10" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span>Lumen</span>
+                    </a>
+
+                    <h1 id="judul login">Login</h1>
+                    <p class="panel__sub">Welcome back! Please login to continue</p>
+
+                    <button type="button" class="btn btn--sso" aria-label="Login with google">
+                        <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                            <circle cx="12" cy="12" r="11" fill="#4285f4"/>
+                            <text x="12" y="16.5" text-anchor="middle" font-size="13" font-weight="700" fill="#fff" font-family="Arial">G</text>
+                        </svg>
+                        Login with google
+                    </button>
+
+
+                    <div class="divider" role="separator" aria-label="or"><span>or</span></div>
+
+                    <form action="#" method="post" novalidate>
+                        <div class="field">
+                            <label for="identitas">Email or username</label>
+                            <input type="text" id="identitas" name="identitas" autocomplete="username" placeholder="@email.com" required>
+                        </div>
+
+                        <div class="field">
+                            <div class="field__row">
+                                <label for="password">Password</label>
+                                <a href="#" class="link">Forgot Password?</a>
+                            </div>
+                            <input type="password" id="password" name="password" autocomplete="current-password" placeholder="Enter password" required>
+                        </div>
+
+                        <div class="check">
+                            <input type="checkbox" id="remember" name="remember">
+                            <label for="remember">Remember me</label>
+                        </div>
+
+                        <button type="submit" class="btn btn--primary">Login</button>
+                    </form>
+
+                    <p class="panel__foot">By continuing, you agree to our <a href="#" class="link">Terms</a> and <a href="#" class="link">Policy</a></p>
+                    <p class="panel__foot">Don't have account? <a href="#" class="link">Sign in</a></p>
+                </div>
+            </section>
+
+    </main>
+</body>
+</html>
